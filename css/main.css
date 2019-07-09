@@ -7,6 +7,7 @@ body {
   background-color: #efefef;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* think like a typewriter reaching the end of the line */
   max-width: 1200px;
 }
 
@@ -17,7 +18,24 @@ body {
   padding: 20px;
   text-align: center;
   margin: 10px;
-  width: 100px;
+ /* width: 200px;*/
+  flex: 1 1 auto; /*Flex Shorthand: this sets flex-grow=1, flex-shrink=0, and width is now 375px */
+}
+
+.box1
+{
+  width: 400px;
+}
+
+/*.box4
+{
+   by default, all items get an order# of 0
+  order: -1;
+}*/
+
+h1
+{
+  font-size: 10vw; /*calculates the viewport width and then takes that into account when scaling. Only use for headings, not body*/
 }
 
 
